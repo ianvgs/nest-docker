@@ -1,0 +1,11 @@
+version: "3"
+services:
+  nest:
+    build: .
+    container_name: nest    
+    command: "npm run start:dev"
+    restart: always
+    ports: 
+    - 3000:3000
+    volumes: 
+    - .:/usr/app
